@@ -80,7 +80,7 @@ public class GastoVariavelController{
         }
         catch(Exception e)
         {
-            System.out.println("Error at update new gastoFixo: "+e);
+            System.out.println("Error at update new gastoVariavel: "+e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

@@ -63,7 +63,7 @@ public class RendaFixaController {
         }
         catch(Exception ex)
         {
-            System.out.println("Error at insert new conta bancaria: " + ex);
+            System.out.println("Error at insert new renda fixa: " + ex);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -78,7 +78,7 @@ public class RendaFixaController {
         }
         catch(Exception e)
         {
-            System.out.println("Error at update new contaBancaria: "+e);
+            System.out.println("Error at update new renda fixa: "+e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

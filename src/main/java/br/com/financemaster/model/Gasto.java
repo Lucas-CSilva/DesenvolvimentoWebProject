@@ -2,17 +2,15 @@ package br.com.financemaster.model;
 
 import java.io.Serializable;
 
-import jakarta.persistence.DiscriminatorColumn;
-import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.InheritanceType;
+import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.Id;
-import jakarta.persistence.Inheritance;
 
-@Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "Usuario_Type")
+// @Entity
+// @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+// @DiscriminatorColumn(name = "Usuario_Type")
+@MappedSuperclass
 public abstract class Gasto implements Serializable{
 
     @Id 

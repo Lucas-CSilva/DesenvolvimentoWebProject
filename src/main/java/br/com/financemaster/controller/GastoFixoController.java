@@ -58,7 +58,7 @@ public class GastoFixoController{
     public ResponseEntity<GastoFixo> insert (@RequestBody GastoFixo gastoFixo)
     {  
         try
-        {
+        {  
             GastoFixo gastoFixoSalvo = gastoFixoRepository.save(gastoFixo);
             return new ResponseEntity<>(gastoFixoSalvo, HttpStatus.OK);
         }
